@@ -1,0 +1,36 @@
+    <h1 align="center">Post</h1>
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body text-center">
+          <% include ./partials/messages %>
+    <form method="post"">
+      <p>Up link Youtube</p>
+        <table border="1">
+            <tr>
+                <td >Link Youtube</td>
+                <td class="col-sm-3"><input type="text" class="form-control" name="link" placeholder="Nhập link Youtube cần up"></td>
+            </tr>
+            <tr>
+                <td>Thể loại</td>
+                <td class="col-sm-3"><select name="category" class="form-control">
+                    <option value="Âm nhạc">Âm nhạc</option>
+                    <option value="Game">Game</option>
+                    <option value="Ô tô">Ô tô</option>
+                    <option value="Hài">Hài</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td class="col-sm-3"><input type="text" name="subject" placeholder="Nhập Subject" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Mô tả</td>
+                <td class="col-sm-3"><textarea name="description" placeholder="Nhập mô tả" class="form-control"></textarea></td>
+            </tr>
+        </table>
+      <button type="submit" class="btn btn-primary">Upload</button>
+      <button type="reset" class="btn btn-secondary">Reset</button>
+    </form>
+    </div>
+  </div>
+</div>
